@@ -11,6 +11,7 @@ var wind = $(".wind span");
 var sun = $(".sun span");
 var time = $(".time");
 var content = $(".content");
+var body = $('body')
 
 async function changeWeather() {
   let searchValue = search.value.trim();
@@ -25,10 +26,21 @@ async function changeWeather() {
     visibility.innerText = data.visibility + "m";
     wind.innerText = data.wind.speed + "m/s";
     sun.innerText = data.main.humidity + "%";
-    value.innerHTML =
-      Math.round(data.main.temp - 273.15) + " <sup>o</sup>C</span>";
+    let temp = Math.round(data.main.temp - 273.15)
+    value.innerHTML = temp + " <sup>o</sup>C</span>";
     shortDesc.innerText = data.weather[0] ? data.weather[0].main : "";
     time.innerText = new Date().toLocaleString("vi");
+
+    if(temp >= 30 ) {
+      body.setAttribute("class","hot")
+    } else if (temp < 30 && temp >= 24) {
+      body.setAttribute("class","warm")
+    } else if (temp < 24 && temp > 18) {
+      body.setAttribute("class","cool")
+    } else {
+      body.setAttribute("class","cold")
+    }
+
   } else {
     content.classList.add('hide');
   }

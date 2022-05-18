@@ -1,0 +1,33 @@
+@media (min-width:64em) {
+   
+}
+
+
+/* =====Tablet========== */
+
+@media (min-width:46.25em) and (max-width:64em) {
+    .app {
+        width: 70%;
+    }
+
+    .temperature {
+        margin: 0 90px;
+    }
+
+    .search {
+        margin: 50px auto 40px auto;
+    }
+}
+
+
+/* ======Mobile====== */
+
+@media (max-width:46.1875em) {
+    .app {
+        width: 90%;
+    }
+
+    .temperature {
+        margin: 0 20px;
+    }
+}

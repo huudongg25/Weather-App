@@ -24,6 +24,34 @@ body {
     background: url('./image/cool.jpg')no-repeat center/cover;
 }
 
+.hot {
+    background:linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0, 0.7)),url('./image/hot.jpg') no-repeat center/cover;
+}
+.hot .app {
+    background: url('./image/hot.jpg')no-repeat center/cover;
+}
+
+.cool {
+    background:linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0, 0.7)),url('./image/cool.jpg') no-repeat center/cover;
+}
+.cool .app {
+    background: url('./image/cool.jpg')no-repeat center/cover;
+}
+
+.cold {
+    background:linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0, 0.7)),url('./image/cold.jpg') no-repeat center/cover;
+}
+.cold .app {
+    background: url('./image/cold.jpg')no-repeat center/cover;
+}
+
+.warm {
+    background:linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0, 0.7)),url('./image/warm.jpg') no-repeat center/cover;
+}
+.warm .app {
+    background: url('./image/warm.jpg')no-repeat center/cover;
+}
+
 .search {
     display: flex;
     width: 80%;
