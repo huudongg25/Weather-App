@@ -91,7 +91,7 @@ body {
 
 .time {
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-shadow: 0 3px 4px rgba(0,0,0,0.4);
 }
 
@@ -124,7 +124,7 @@ body {
 .more-infor div {
     display: flex;
     flex-direction: column;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-shadow: 0 3px 4px rgba(0,0,0,0.4);
 }
 

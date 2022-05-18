@@ -13,8 +13,7 @@ var time = $(".time");
 var content = $(".content");
 var body = $('body')
 
-async function changeWeather() {
-  let searchValue = search.value.trim();
+async function changeWeather(searchValue) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=94929ba0d51beac2afbd1b4df750135c`;
 
   let data = await fetch(apiUrl).then((res) => res.json());
@@ -48,6 +47,9 @@ async function changeWeather() {
 
 search.addEventListener('keypress', function (e) {
   if (e.code === "Enter") {
-    changeWeather();
+    let searchValue = search.value.trim()
+    changeWeather(searchValue);
   }
 });
+
+changeWeather('Hanoi')
