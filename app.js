@@ -49,7 +49,10 @@ search.addEventListener('keypress', function (e) {
   if (e.code === "Enter") {
     let searchValue = search.value.trim()
     changeWeather(searchValue);
+    
+    search.value = ''
   }
+  
 });
 
 changeWeather('Hanoi')
